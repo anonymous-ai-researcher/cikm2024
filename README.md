@@ -143,8 +143,8 @@
   </tr>
   <tr>
     <td class="tg-c3ow">|Onto|</td>
-    <td class="tg-c3ow">0</td>
-    <td class="tg-c3ow">982</td>
+    <td class="tg-c3ow">10</td>
+    <td class="tg-c3ow">794</td>
     <td class="tg-c3ow">283</td>
     <td class="tg-c3ow">312</td>
     <td class="tg-c3ow">346</td>
