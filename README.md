@@ -11,7 +11,7 @@
 
 ## Data
 
-* All the test data, including Oxford-ISG snapshot, BioPortal snapshot,  SNOMED CT and GO, can be downloaded at https://github.com/anonymous-ai-researcher/ijcai2023.
+* All the test data, including Oxford-ISG snapshot, BioPortal snapshot,  SNOMED CT and GO, can be downloaded at https://github.com/anonymous-ai-researcher/www2024.
 * Statistics of Oxford-ISG & BioPortal (Min:Minimum, Max:Maximum, Med:Medium, 90 Ptl: 90th Percentile):
 
 
