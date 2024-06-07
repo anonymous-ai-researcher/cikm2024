@@ -219,11 +219,11 @@
 
 ## Description of the UI tool
 
-* The UI tool is a high-performance prototype for computing uniform interpolants of **ELI-Ontologies**. It can be used as a Java library or a standalone tool for UI and related tasks.
+* The UI tool is a high-performance prototype for computing uniform interpolants of **ELIO-Ontologies**. It can be used as a Java library or a standalone tool for UI and related tasks.
 
 * A uniform interpolant is a restricted view of an ontology that uses only a sub-signature of the ontology, namely, the interpolation signature, while preserving all logical entailments over the interpolation signature. A uniform interpolant can be computed by forgetting the names (usually incrementally) not  in the interpolation signature (the set of the names to be forgotten is called the forgetting signature) in such a way that all logical entailments are preserved up to the remaining signature, which amounts to the interpolation signature.
 
-* Our UI tool can always compute a uniform interpolant for ELI-Ontologies. If an input ontology is not an ELI one, our tool simply takes the ELI fragment of the ontology and discards those axioms not expressible in ELI. If an input ontology contains cyclic dependencies over the names in the forgetting signature, the result cannot always be represented finitely without fixpoint operators. Since fixpoint operators are not supported by OWL API, our UI tool introduces additional concept names, namely definers, to the output ontology that simulate the behaviour of fixpoint operators. In this sense, the result is no longer a uniform interpolant, since it contains extra names that are not in the specified interpolation signature.
+* Our UI tool can always compute a uniform interpolant for ELIO-Ontologies. If an input ontology is not an ELIO one, our tool simply takes the ELIO fragment of the ontology and discards those axioms not expressible in ELIO. If an input ontology contains cyclic dependencies over the names in the forgetting signature, the result cannot always be represented finitely without fixpoint operators. Since fixpoint operators are not supported by OWL API, our UI tool introduces additional concept names, namely definers, to the output ontology that simulate the behaviour of fixpoint operators. In this sense, the result is no longer a uniform interpolant, since it contains extra names that are not in the specified interpolation signature.
 
 ## Run of the UI tool
 
@@ -233,8 +233,8 @@
   public Set<OWLAxiom> ForgettingAPI(Set<OWLObjectProperty> roles, Set<OWLClass> concepts, OWLOntology onto)
   ```
 
-* The input are a set of role names to be forgotten  ( ``` Set<OWLObjectProperty> roles ``` ),  a set of concept names to be forgotten ( ``` Set<OWLClass> concepts ``` ) and an ELI-Ontologies from which the concept and role names are forgotten ( ``` OWLOntology onto ``` ).
+* The input are a set of role names to be forgotten  ( ``` Set<OWLObjectProperty> roles ``` ),  a set of concept names to be forgotten ( ``` Set<OWLClass> concepts ``` ) and an ELIO-Ontologies from which the concept and role names are forgotten ( ``` OWLOntology onto ``` ).
 
-* The output is another ELI-Ontology which is a Σ-uniform interpolant of the ontology ``onto``, represented as a set of OWLAxioms.
+* The output is another ELIO-Ontology which is a Σ-uniform interpolant of the ontology ``onto``, represented as a set of OWLAxioms.
 
 * An example illustrating the usage of the UI tool is included in the Forgetter.class main function.
